@@ -1,43 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venjy | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <!-- Barra de navegación -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#cats">My Cats</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Sección de inicio -->
+  <header id="home">
+    <h1>Venjy's Portfolio</h1>
+    <p>👾 Dev | Indie Creator | Cat Dad 🐾</p>
+    <div class="scroll-down">
+      <a href="#about">▼</a>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección "Sobre mí" -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="container">
+        <article class="post">
+          <img src="Venjy.png" alt="Venjy photo">
+          <div class="post-content">
+            <h3>Benjamin "Venjy" Flores</h3>
+            <p>Hi! I'm Venjy, a Computer Engineering student from Chile, passionate about programming
+              software and games.</p>
+            <p>Currently in my second year, I'm building my skills in Python, C#, Java, and web development.
+            </p>
+            <p>I'm also a game developer, creating indie games with Unity and pixel art. I love the
+              challenge of bringing ideas to life through code and design.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de habilidades -->
+    <section id="skills" class="section dark-bg skills-section">
+      <h2 class="section-title">Skills & Experience</h2>
+      <div class="container">
+        <article class="skill-card">
+          <h3>Programming Languages/
+            Technologies</h3>
+          <ul>
+            <li>Python</li>
+            <li>C# (.NET)</li>
+            <li>Java</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>Linux</li>
+            <li>Windows Server</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Game Development</h3>
+          <ul>
+            <li>Unity Engine</li>
+            <li>2D Game Design</li>
+            <li>Pixel Art</li>
+            <li>Game Mechanics</li>
+            <li>Design Patterns</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Experience</h3>
+          <ul>
+            <li>4 years in Computer Maintenance and
+              Technical Support</li>
+            <li>Full Stack - Freelance in "Centro de eventos - Cañete"</li>
+            <li>Game Developer - Freelance in "Unknow Abyss"</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Other Skills</h3>
+          <ul>
+            <li>Computer Maintenance</li>
+            <li>Technical Support</li>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+            <li>Effective Communication</li>
+            <li>English</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section id="projects" class="section">
+      <h2 class="section-title">My Projects</h2>
+      <div class="container">
+        <article class="project-card">
+          <img src="prototipo2.gif" alt="Project 1">
+          <div class="project-info">
+            <h3>Unknow Abyss</h3>
+            <p>Currently developing an indie game using Unity with vertical shooter and caverunner mechanics
+              using a pixel art style.</p>
+            <a href="#" class="btn">View Details</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="webdevgif.gif" alt="Project 2">
+          <div class="project-info">
+            <h3>Web Development</h3>
+            <p>Various web projects including this portfolio and other (or not) experimental sites.</p>
+            <a href="#home" class="btn">View Details</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="pagcentroevn.gif" alt="Centro de Eventos Cañete">
+          <div class="project-info">
+            <h3>Centro de Eventos Cañete</h3>
+            <p>Full Stack freelance project for a local event center, including web design, booking system,
+              and admin panel.</p>
+            <a href="centroeventostest/" class="btn" target="_blank">View Details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de gatos -->
+    <section id="cats" class="section dark-bg">
+      <h2 class="section-title">My Cats</h2>
+      <div class="container">
+        <article class="post">
+          <h3>Meet Mila & Gala</h3>
+          <img src="MilayGala.jfif" alt="Mila and Gala">
+          <p>These are my adorable feline companions who keep me company during coding sessions.</p>
+        </article>
+
+        <article class="post">
+          <h3>Galatea</h3>
+          <img src="Gala.jfif" alt="Galatea">
+          <p>3 years old :3</p>
+        </article>
+
+        <article class="post">
+          <h3>Mila</h3>
+          <img src="MilaGod.jfif" alt="Mila">
+          <p>Carey + fat = Mila</p>
+          <p>4 years old</p>
+        </article>
+      </div>
+
+      <!-- Galería de fotos -->
+      <div class="gallery-header">
+        <h3>Best photos of my cats</h3>
+      </div>
+      <div class="gallery">
+        <img src="Mila1.jfif" alt="Mila">
+        <img src="Gala2.jfif" alt="Gala">
+        <img src="Gala3.jfif" alt="Gala">
+        <img src="Mila3.jfif" alt="Mila">
+        <img src="GalayMila.jfif" alt="Gala y Mila">
+        <img src="Galapatitas.jfif" alt="Gala patitas">
+        <img src="MilaCuestionando.jfif" alt="Mila cuestionando">
+        <img src="Galatuto.jfif" alt="Gala túnica">
+        <img src="Galapatona.jfif" alt="Gala patona">
+        <img src="MilaHombre.jfif" alt="Mila hombre">
+        <img src="Milasol.jfif" alt="Mila al sol">
+        <img src="Milapetit.jfif" alt="Mila pequeña">
+        <img src="Cutes.gif" alt="Lesbianas">
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="container">
+        <article class="contact-card">
+          <h3>Contact Information</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="icon">✉️</i>
+              <div>
+                <span class="contact-label">Email:</span>
+                <a href="mailto:benjaf243@gmail.com">benjaf243@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="icon">🐙</i>
+              <div>
+                <span class="contact-label">GitHub:</span>
+                <a href="https://github.com/Venjyy" target="_blank">github.com/Venjyy</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="icon">🔗</i>
+              <div>
+                <span class="contact-label">LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/benjamin-flores-aa59112b5/"
+                  target="_blank">linkedin.com/in/BenjaminF</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="contact-form">
+          <h3>Send me a message</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-content">
+      <section class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#cats">Cats</a>
+        <a href="#contact">Contact</a>
+      </section>
+      <p>© 2025 Venjy | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Modal para imágenes -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
